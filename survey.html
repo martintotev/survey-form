@@ -15,27 +15,102 @@
         Help us improve our service.
     </p>
     <form id="survey-form" method="GET">
-        <div class="info">
-            <div class="left-label">
-                <label for="name">Name:</label>
-            </div>
-            <div class="right-input">
-                <input id="name" name="name" type="text" placeholder="What is your name?" required>
-            </div>
-            <div class="left-label">
-                <label for="email">Email:</label>
-            </div>
-            <div class="right-input">
-                <input id="email" name="email" type="text" placeholder="What is your email?" required>
-            </div>
-            <div class="left-label">
-                <label for="age">Age:</label>
-            </div>
-            <div class="right-input">
-                <input id="age" name="age" type="text" placeholder="How old are you?" required>
-            </div>
+        <div class="left-label">
+            <label for="name">Name:</label>
         </div>
-</div>
-</div>
-</form>
+        <div class="right-input">
+            <input id="name" name="name" type="text" placeholder="What is your name?" required>
+        </div>
+        <div class="left-label">
+            <label for="email">Email:</label>
+        </div>
+        <div class="right-input">
+            <input id="email" name="email" type="text" placeholder="What is your email?" required>
+        </div>
+        <div class="left-label">
+            <label for="age">Age:</label>
+        </div>
+        <div class="right-input">
+            <input id="age" name="age" type="number" min="13" max="100" placeholder="How old are you?" required>
+        </div>
+        <div class="left-label">
+            <label for="occupation">What is your occupation?</label>
+        </div>
+        <div class="right-input">
+            <select id="occupation" name="occupation" class="dropdown">
+                <option disabled value>Please select an option</option>
+                <option value="hs-student">High School Student</option>
+                <option value="uni-student">University Student</option>
+                <option value="job">Full-time Job</option>
+                <option value="army-current">Professional Soldier</option>
+                <option value="army-veteran">Army Veteran</option>
+                <option value="other-not-say">Other/Rather not say</option>
+            </select>
+        </div>
+        <div class="left-label">
+            <label for="recommend">How likely are you to recommend our establishment to family/friends</label>
+        </div>
+        <div class="right-input">
+            <ul style="list-style:none;">
+                <li class="radio">
+                    <label>Definitely
+                        <input name="radio-btn" value="1" type="radio" class="recommend-form">
+                    </label>
+                </li>
+                <li class="radio">
+                    <label>Most likley
+                        <input name="radio-btn" value="1" type="radio" class="recommend-form">
+                    </label>
+                </li>
+                <li class="radio">
+                    <label>Maybe
+                        <input name="radio-btn" value="1" type="radio" class="recommend-form">
+                    </label>
+                </li>
+                <li class="radio">
+                    <label>Nope
+                        <input name="radio-btn" value="1" type="radio" class="recommend-form">
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="empty"></div>
+        <div class="left-label">
+            <label for="like">Which menu do you prefer?</label>
+        </div>
+        <div class="right-input">
+            <select id="like" name="like" class="dropdown">
+                <option disabled value>Please select an option</option>
+                <option value="breakfast">Breakfast Menu</option>
+                <option value="lunch">Lunch Menu</option>
+                <option value="tea">Tea-time Menu</option>
+                <option value="dinner">Dinner Menu</option>
+            </select>
+        </div>
+        <div class="left-label">
+            <label for="improve">What part of the menu should we improve?(Check more than one)</label>
+        </div>
+        <div class="right-input">
+            <ul id="improve" style="list-style: none;">
+                <li class="checkbox">
+                    <label>
+                        <input name="improve" value="1" type="checkbox" class="improve-form">Taste of the food
+                    </label>
+                </li>
+                <li class="checkbox">
+                    <label>
+                        <input name="improve" value="1" type="checkbox" class="improve-form">Size of portions
+                    </label>
+                </li>
+                <li class="checkbox">
+                    <label>
+                        <input name="improve" value="1" type="checkbox" class="improve-form">Menu variety
+                    </label>
+                </li>
+                <li class="checkbox">
+                    <input name="improve" value="1" type="checkbox" class="improve-form">Quality of service
+                </li>
+            </ul>
+        </div>
+    </form>
 </div>
