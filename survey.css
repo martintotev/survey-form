@@ -1,3 +1,5 @@
+@import url(https: //fonts.googleapis.com/css?family=Averia+Serif+Libre|Lato);
+
 html, body {
     background-color: #f8f9fa;
     text-align: center;
@@ -6,6 +8,109 @@ html, body {
 
 .body {
     background-color: #e7f5ff;
-    width: 100%;
+    border-radius: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 30px;
+    width: 80%;
+    max-width: 720px;
     height: 100%;
+}
+
+#title {
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: bold;
+}
+
+.left-label {
+    display: inline-block;
+    text-align: right;
+    width: 30%;
+    padding: 1rem;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.right-input {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.input-text {
+    height: 25px;
+    width: 250px;
+    padding: 4px;
+    margin: 10px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 4px;
+}
+
+#age {
+    width: 110px;
+}
+
+.improve-form,
+input[type="checkbox"] {
+    float: left;
+    margin-top: 10px;
+}
+
+#submit {
+    background-color: rgb(224, 92, 92);
+    border-radius: 4px;
+    color: white;
+    font-size: 1.2em;
+    height: 50px;
+    width: 100px;
+    margin: 15px;
+    border: 1px solid;
+    border-color: white;
+}
+
+.dropdown {
+    height: 24px;
+    width: 160px;
+    padding: 6px;
+    margin: 10px;
+    margin-top: 16px;
+    border: 1px solid #a5a5a5;
+    border-radius: 4px;
+}
+
+.radio, .checkbox {
+    position: relative;
+    left: -32px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .input-field {
+        width: 80%;
+    }
+    select {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .left-label {
+        width: 100%;
+        text-align: left;
+    }
+    .right-input {
+        width: 80%;
+        float: left;
+    }
+    .input-field {
+        width: 100%;
+    }
+    select {
+        width: 100%;
+    }
 }

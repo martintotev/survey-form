@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Survey Form</title>
-    <meta name="description" content="A trbute page to the creator of HTML.">
+    <meta name="description" content="Survey Form">
     <link rel="stylesheet" href="survey.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro,Source+Serif+Pro" rel="stylesheet">
 </head>
 
 <h1 id="title">Service Survey</h1>
@@ -19,19 +18,19 @@
             <label for="name">Name:</label>
         </div>
         <div class="right-input">
-            <input id="name" name="name" type="text" placeholder="What is your name?" required>
+            <input class="input-text" id="name" name="name" type="text" placeholder="What is your name?" required>
         </div>
         <div class="left-label">
             <label for="email">Email:</label>
         </div>
         <div class="right-input">
-            <input id="email" name="email" type="text" placeholder="What is your email?" required>
+            <input class="input-text" id="email" name="email" type="text" placeholder="What is your email?" required>
         </div>
         <div class="left-label">
-            <label for="age">Age:</label>
+            <label id="age" for="age">Age:</label>
         </div>
         <div class="right-input">
-            <input id="age" name="age" type="number" min="13" max="100" placeholder="How old are you?" required>
+            <input class="input-text" id="age" name="age" type="number" min="13" max="100" placeholder="How old are you?" required>
         </div>
         <div class="left-label">
             <label for="occupation">What is your occupation?</label>
@@ -108,9 +107,28 @@
                     </label>
                 </li>
                 <li class="checkbox">
-                    <input name="improve" value="1" type="checkbox" class="improve-form">Quality of service
+                    <label>
+                        <input name="improve" value="1" type="checkbox" class="improve-form">Quality of service
+                    </label>
+                </li>
+                <li class="checkbox">
+                    <label>
+                        <input name="improve" value="1" type="checkbox" class="improve-form">Number of Staff
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input name="improve" value="1" type="checkbox" class="improve-form">Number of Seats
+                    </label>
                 </li>
             </ul>
         </div>
+        <div class="left-label">
+            <label for="comments">Please leave a comment or suggestion. It helps improve our restaurant</label>
+        </div>
+        <div class="right-input">
+            <textarea id="comments" class="input-field" style="height:30%; width: 30%; max-height: 100px; max-width: 50%; resize: both; " name="comment" placeholder="Leave your comment/suggestion here..."></textarea>
+        </div>
+        <button id="submit" type="submit">SUBMIT</button>
     </form>
 </div>
