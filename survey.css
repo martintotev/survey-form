@@ -3,11 +3,12 @@
 html, body {
     background-color: #f8f9fa;
     text-align: center;
-    font-family: 'Source Sans Pro'
+    font-family: 'Source Sans Pro';
+    color: #212529;
 }
 
 .body {
-    background-color: #e7f5ff;
+    background-color: #e9ecef;
     border-radius: 1.5rem;
     font-family: 'Lato', sans-serif;
     font-weight: 200;
@@ -22,13 +23,19 @@ html, body {
 #title {
     font-family: 'Averia Serif Libre', serif;
     font-weight: bold;
+    font-size: 4em;
+}
+
+.large-text {
+    font-weight: 500;
+    font-size: 1.5em;
 }
 
 .left-label {
     display: inline-block;
     text-align: right;
     width: 30%;
-    padding: 1rem;
+    padding: .3rem;
     vertical-align: top;
     margin-top: 10px;
 }
@@ -41,7 +48,7 @@ html, body {
 }
 
 .input-text {
-    height: 25px;
+    height: 24px;
     width: 250px;
     padding: 4px;
     margin: 10px;
@@ -49,14 +56,18 @@ html, body {
     border-radius: 4px;
 }
 
-#age {
-    width: 110px;
+::placeholder {
+    padding-left: 4px;
 }
 
-.improve-form,
-input[type="checkbox"] {
+#number {
+    width: 120px;
+}
+
+.improve-form, input[type="checkbox"] {
     float: left;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 #submit {
@@ -72,11 +83,12 @@ input[type="checkbox"] {
 }
 
 .dropdown {
-    height: 24px;
+    height: 32px;
     width: 160px;
     padding: 6px;
     margin: 10px;
     margin-top: 16px;
+    padding: 4px;
     border: 1px solid #a5a5a5;
     border-radius: 4px;
 }
@@ -84,9 +96,20 @@ input[type="checkbox"] {
 .radio, .checkbox {
     position: relative;
     left: -32px;
-    margin-left: 10px;
     display: block;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
+}
+
+#comments {
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 30%;
+    width: 30%;
+    min-height: 50px;
+    min-width: 120px;
+    max-height: 100px;
+    max-width: 240px;
+    resize: both;
 }
 
 @media screen and (max-width: 800px) {
